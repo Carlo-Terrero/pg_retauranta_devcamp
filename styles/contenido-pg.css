@@ -1,0 +1,22 @@
+.pagina {
+    display: flex;
+    justify-content: center;
+}
+
+.pagina>.conten-pagina {
+    width: 1000px;
+}
+
+.pagina>.conten-pagina>#chef {
+    width: 350px;
+    margin: 23px 40px 20px 0px;
+    /*Con esto podemos poner la imagen a la izquierda y el texto al alrededor*/
+    float: left;
+    border: 1px solid #cea135;
+}
+
+.pagina>.conten-pagina p {
+    letter-spacing: 1px;
+    /*Espacio entre lineas*/
+    line-height: 30px;
+}

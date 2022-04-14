@@ -1,0 +1,43 @@
+/* Espacidores*/
+
+.espacio60 {
+    height: 60px;
+    width: 100%;
+}
+
+.espacio10 {
+    height: 10px;
+    width: 100%;
+}
+
+
+/*links de anclados*/
+
+.link-ancla {
+    text-decoration: none;
+}
+
+.link-ancla a:focus {
+    outline: none;
+}
+
+
+/*Con estos seudo-selectores agregamos el contenido
+que queramos (antes del contenido de la etiqueta 
+y despues del contenido de la etiqueta).
+
+En este ejemplo solo añadimos texto.
+
+.link-ancla h1::before {
+    content: "I´m before - ";
+}           */
+
+.link-ancla h1::after {
+    /*Con esto le damos el font family que require*/
+    font-family: "Font Awesome 5 Free";
+    /*Con esto traemos un simbolo con css que podemos trabajar*/
+    content: " \f0c1";
+    /*tenemos que darle un tamaño de fuente aunqure nos ha
+    funcionado igualmente*/
+    font-weight: 900;
+}

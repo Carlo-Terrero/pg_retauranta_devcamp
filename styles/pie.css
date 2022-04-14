@@ -1,0 +1,69 @@
+/* Pie styles*/
+
+.pie {
+    background-color: #11122b;
+    color: white;
+    font-family: "Ubuntu Condensed", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    margin-top: -4px;
+}
+
+.pie>.log-pie img {
+    width: 180px;
+    height: 100%;
+    /*Con esto cambiamos el brillo de una imagen*/
+    /*filter: brightness(50%);*/
+    /*Con esto le cambiamos la opacidad "Transparecia" */
+    opacity: 0.5;
+}
+
+.cute-picture {
+    filter: brightness(30%);
+}
+
+.pie>.pie-contacto-horario span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+.pie>.pie-contacto-horario>.horario {
+    font-size: 0.8em;
+    color: #cea135;
+    text-transform: uppercase;
+}
+
+.pie>.contenedor-enlaces {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 400px;
+}
+
+.pie>.redes-sociales {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pie>.redes-sociales a {
+    font-size: 1.5em;
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+
+.pie>.redes-sociales a:hover {
+    color: #cea135;
+}
+
+.pie>.copyright {
+    margin-bottom: 42px;
+    font-size: 0.7em;
+    color: #858585;
+}

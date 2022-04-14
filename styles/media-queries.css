@@ -1,0 +1,87 @@
+/*Con las media queries podemos adactar el contenido a los distintos tamaños de pantallas*/
+
+
+/*con esto decimos que si tiene menos px de los que ponemos aqui se aplicará lo siguente:*/
+
+@media (max-width: 615px) {
+    .nav-principal {
+        flex-direction: column;
+        height: 100%;
+    }
+    .nav-principal>.columna-izq {
+        order: 2;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .nav-principal>.columna-central {
+        order: 1;
+        width: 100%;
+    }
+    .nav-principal>.columna-derecha {
+        order: 3;
+        margin-top: 15px;
+    }
+    .contenedor-enlaces {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .contenedor-enlaces>.enlaces-nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        width: 100%;
+    }
+    .heroe-seccion {
+        padding: 50px 10px;
+    }
+    .caracteristicas-seccion {
+        height: 100%;
+        flex-direction: column;
+    }
+    .caracteristicas-seccion>.columns-wrapper {
+        width: 100%;
+    }
+    .pie {
+        height: 100%;
+    }
+    /*Esta parte es para la pg nosotros/about*/
+    .superior-cortado>.contenido-divicion-cortado>.contenido-cortado-superior {
+        flex-direction: column;
+    }
+    .superior-cortado>.superior-img {
+        background-size: 550px;
+    }
+    .pagina {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+    .pagina>.conten-pagina>#chef {
+        margin: 0px 0px 25px 0px;
+        width: 100%;
+    }
+    .cuadrado {
+        grid-template-columns: 1fr !important;
+    }
+    .cuadrado>.contenedor-texto-cuadrado {
+        order: 1;
+    }
+    .cuadrado>.img-conten {
+        order: 2;
+    }
+    .contacto-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .formulario input {
+        padding: 1.5rem 0rem;
+    }
+    .formulario textarea {
+        padding: 1.5rem 0rem;
+    }
+    .nav-links {
+        display: grid;
+        grid-template-columns: (5, 1fr);
+        width: 300px;
+    }
+}

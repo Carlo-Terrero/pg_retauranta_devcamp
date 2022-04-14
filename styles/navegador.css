@@ -1,0 +1,140 @@
+/*navegador - barra de arriba*/
+
+.nav-principal {
+    height: 190px;
+    background-color: #11122b;
+    color: #cbcbcb;
+    /* con esto volvemos al contenedor flesbox
+    y convierte a los hijo de forma automatica 
+    en flexbox. Los hijos de los hijos no.*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+}
+
+
+/*Columna Izquierda*/
+
+.nav-principal .columna-izq {
+    display: flex;
+    align-items: center;
+}
+
+.nav-principal>.columna-izq>.icon {
+    margin-right: 15px;
+}
+
+.nav-principal>.columna-izq>.icon i {
+    font-size: 2em;
+}
+
+.nav-principal>.columna-izq>.contacto-horario {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.nav-principal>.columna-izq>.contacto-horario>.horario {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #858585;
+    font-size: 0.8em;
+}
+
+
+/*Columna derecha*/
+
+.nav-principal>.columna-derecha {
+    display: flex;
+    align-items: center;
+}
+
+.nav-principal>.columna-derecha>.direc {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: right;
+}
+
+.nav-principal>.columna-derecha>.direc a {
+    color: #858585;
+    text-decoration: none;
+    font-size: 0.9em;
+    /*Recuerda que esto es para hacer lo de los movimientos*/
+    transition: 0.5s;
+}
+
+.nav-principal>.columna-derecha>.direc a:hover {
+    color: #cea135;
+}
+
+.nav-principal>.columna-derecha>.direccion-icon {
+    margin-left: 15px;
+    font-size: 2em;
+}
+
+.nav-principal>.columna-derecha>.direccion-icon a {
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+
+.nav-principal>.columna-derecha>.direccion-icon a:hover {
+    color: #cea135;
+}
+
+
+/*Columna Central*/
+
+.contenedor-enlaces>.enlaces-nav a {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: white;
+}
+
+.nav-principal>.columna-central {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 42px;
+    width: 500px;
+}
+
+.nav-principal>.columna-central>.log-imagen {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-principal>.columna-central>.log-imagen img {
+    height: 100%;
+    width: 216px;
+}
+
+.contenedor-enlaces {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-enlaces>.enlaces-nav {
+    /*Esto es para que no se muevan los otros elementos por 
+    falta de espacio*/
+    width: 70px;
+    /*con esto las letras se expandiran para los lados*/
+    text-align: center;
+}
+
+.contenedor-enlaces>.enlaces-nav a {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #cbcbcb;
+    text-decoration: none;
+    /*Para que se transforme pasado el tiempo asignado*/
+    transition: 0.5s;
+}
+
+
+/*El hover es un pseudo-estado. Asi que esto es 
+un pseudo-selector, el cual indica que siempre
+que se pase por encima, aplique los cambios
+requeridos*/
+
+.contenedor-enlaces>.enlaces-nav a:hover {
+    color: #cea135;
+    /*Espacio entre letras*/
+    letter-spacing: 2px;
+}

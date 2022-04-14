@@ -1,0 +1,110 @@
+/* Hero section styles*/
+
+
+/*Funcion de paralaje: deja la imagen pegada al fondo y
+con scrol la vamos recorriendo*/
+
+.heroe-seccion {
+    background-image: url(../img/fries-hero-bg.jpg);
+    padding: 100px;
+    height: 300px;
+    /*Con esto lo fijamos*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroe-seccion>.top-encabezado {
+    padding: 1px 20px;
+    background-color: #11122b;
+    color: #cbcbcb;
+    width: 370px;
+    border-radius: 2px;
+}
+
+.heroe-seccion>.bot-encabezado {
+    background-color: #cea135;
+    color: #11122b;
+    padding: 1px 20px;
+    margin-top: 15px;
+    width: 370px;
+    border-radius: 2px;
+}
+
+
+/* caracteristicas-seccion styles*/
+
+.caracteristicas-seccion {
+    height: 400px;
+    background-image: url(../img/fries-multiply-bg.jpg);
+    /*Color de fondo por si no carga la imagen*/
+    background-color: #cea135;
+    /*Tamaño tipo y Color solo en top para separar una img de otra*/
+    border-top: 10px solid white;
+    /*Color de las letras*/
+    color: #11122b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu Condensed", sans-serif;
+    /*Con esto le damos una sombra en la parte de abajo en el div
+    dependiendo la sobra que quieras puedes buscar un generador de
+    sombras en google https://www.cssmatic.com/box-shadow */
+    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+}
+
+.caracteristicas-seccion>.columns-wrapper {
+    /*width: 1000px;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.caracteristicas-seccion>.columns-wrapper>.column {
+    padding: 20px;
+    margin: 42px;
+    text-align: center;
+    /*Con esto hacemos la sombra debajo de las colomnas,
+    lo dejamos transparente para que luego le cambiemos el color
+    y no parezca un salto */
+    border-bottom: 5px solid transparent;
+    /*Le damos bordes redondeados.*/
+    border-radius: 10px;
+    /*El tiempo que tarda en ejecutarse la transicion*/
+    transition: 1s;
+}
+
+.caracteristicas-seccion>.columns-wrapper>.column:hover {
+    /*Aqui le cambiamos el color a la sembra de transparente
+    al color que queramos*/
+    border-bottom: 5px solid #11122b;
+}
+
+
+/*Con el :nth-child() nos encargamos de los hijos que no estan
+en algun div individualmente, marcando el puesto del hijo.
+Recuerda dejar un espacio entre el div y :nth-child() para que
+te pille solo el hijo seleccionado y no todo el div*/
+
+
+/*de echo me esta dando problemas con el icono no se porque
+por eso lo seleccionare diferente*/
+
+.caracteristicas-seccion>.columns-wrapper>.column i {
+    font-size: 3em;
+}
+
+.caracteristicas-seccion>.columns-wrapper>.column :nth-child(2) {
+    font-size: 1.5em;
+    font-weight: 900;
+    height: 50px;
+    transition: 1s;
+}
+
+.caracteristicas-seccion>.columns-wrapper>.column :nth-child(2):hover {
+    letter-spacing: 1px;
+}
+
+.caracteristicas-seccion>.columns-wrapper>.column :nth-child(3) {
+    font-size: 1.1em;
+}

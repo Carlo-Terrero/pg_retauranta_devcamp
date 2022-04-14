@@ -1,0 +1,37 @@
+/*Estilos de los cuadrados con grid*/
+
+.contenedor-cuadrados {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-cuadrados>.cuadrados {
+    width: 1000px;
+}
+
+.contenedor-cuadrados>.cuadrados>.cuadrado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cuadrado>.img-conten img {
+    width: 100%;
+    height: 500px;
+    /*Esto es parecido a cortar la imagen pero en este caso
+    lo hace cortando los bodes de la img para que resalte mas el
+    centro */
+    object-fit: cover;
+    margin-top: -4px;
+}
+
+.cuadrado>.contenedor-texto-cuadrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px;
+}
+
+.cuadrado>.contenedor-texto-cuadrado h1 {
+    color: #cea135;
+}
